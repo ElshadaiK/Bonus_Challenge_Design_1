@@ -171,6 +171,15 @@ h3 {
         display: block;
         padding: 10px 15px 0 15px;
     }
+    @media only screen and (min-width: 800px){
+
+        body {
+            -moz-background-size: auto 100%, auto 75%;
+            -o-background-size: auto 100%, auto 75%;
+            -webkit-background-size: auto 100%, auto 75%;
+            background-size: auto 100%, auto 75%;
+        }
+    
     .page-wrapper {
         margin: 0 auto;
         padding: 0;
