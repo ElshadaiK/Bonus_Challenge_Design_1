@@ -1,5 +1,4 @@
 html,
-body,
 div,
 section,
 header,
@@ -7,7 +6,6 @@ h1,
 h2,
 h3,
 abbr,
-p,
 a,
 footer,
 aside,
@@ -28,6 +26,7 @@ html {
 }
 
 body {
+    margin: 0;
     overflow: auto;
     padding: 0 0 25px 0;
     min-width: 220px;
@@ -35,3 +34,45 @@ body {
     color: #fff;
     font: 20px/23px "museo-sans", sans-serif;
 }
+
+p {
+    padding: 15px 15px 0 15px;
+    text-align: center;
+    margin: 0;
+}
+abbr,
+acronym {
+    border-bottom: none;
+}
+
+
+h1,
+h2,
+h3 {
+    display: block;
+    padding: 20px 15px 0 15px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 46px;
+    line-height: 46px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 26px;
+}
+
+h3 {
+    font-size: 23px;
+    line-height: 23px;
+}
+
+    h3 + nav,
+    h3 + ul {
+        padding-top: 5px;
+    }
