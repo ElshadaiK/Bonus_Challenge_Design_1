@@ -76,3 +76,54 @@ h3 {
     h3 + ul {
         padding-top: 5px;
     }
+
+    a {
+        display: inline-block;
+        padding: 0 4px;
+        border-radius: 2px;
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+        line-height: 21px;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+    }
+    
+    .zen-validate-html,
+    .zen-validate-css,
+    .zen-license,
+    .zen-github,
+    .zen-accessibility {
+        display: block;
+        padding: 10px 15px 0 15px;
+    }
+    
+    .zen-validate-html {
+        padding-top: 15px;
+    }
+    
+    footer a {
+        border-radius: 0;
+        background-color: #000;
+        color: #fff;
+    }
+    
+        footer a::after {
+            display: block;
+            margin-top: 1px;
+            padding: 1px 2px;
+            border-radius: 2px;
+            background: white;
+            color: #000;
+            content: attr(title);
+            line-height: 21px;
+        }
+    
+    
+    .wrapper li {
+        display: block;
+        padding: 10px 15px 0 15px;
+    }
+    
