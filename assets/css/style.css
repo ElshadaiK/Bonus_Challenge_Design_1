@@ -171,4 +171,121 @@ h3 {
         display: block;
         padding: 10px 15px 0 15px;
     }
+    .page-wrapper {
+        margin: 0 auto;
+        padding: 0;
+        width: 760px;
+        background: transparent;
+    }
+    
+        .page-wrapper::before,
+        .page-wrapper::after {
+            display: none;
+        }
+        header::before,
+        header::after,
+        .summary::before,
+        .summary::after,
+        .preamble::before,
+        .preamble::after,
+        .design-selection::before,
+        .design-selection::after,
+        .design-archives::before,
+        .design-archives::after,
+        .zen-resources::before,
+        .zen-resources::after,
+        .explanation::before,
+        .explanation::after,
+        .participation::before,
+        .participation::after,
+        .benefits::before,
+        .benefits::after,
+        .requirements > *::before,
+        .requirements > *::after,
+        footer::before,
+        footer::after {
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            width: 360px;
+            content: '';
+        }
+        
+        header::before,
+        .summary::before,
+        .preamble::before,
+        .design-selection::before,
+        .design-archives::before,
+        .zen-resources::before,
+        .explanation::before,
+        .participation::before,
+        .benefits::before,
+        .requirements > *::before,
+        footer::before {
+            top: -600px;
+            height: 600px;
+            background: url(http://www.csszengarden.com/219/hook3.svg) no-repeat center bottom, url(http://www.csszengarden.com/219/layer-frame.svg) no-repeat center 567px;
+            -moz-background-size: 300px auto, 360px auto;
+            -o-background-size: 300px auto, 360px auto;
+            -webkit-background-size: 300px auto, 360px auto;
+            background-size: 300px auto, 360px auto;
+        }
+        
+        header::after,
+        .summary::after,
+        .preamble::after,
+        .design-selection::after,
+        .design-archives::after,
+        .zen-resources::after,
+        .explanation::after,
+        .participation::after,
+        .benefits::after,
+        .requirements > *::after,
+        footer::after {
+            bottom: -33px;
+            height: 33px;
+            background: transparent url(http://www.csszengarden.com/219/layer-frame.svg) no-repeat center bottom;
+            -moz-background-size: 360px auto;
+            -o-background-size: 360px auto;
+            -webkit-background-size: 360px auto;
+            background-size: 360px auto;
+        }
+        
+        .sidebar {
+            float: left;
+            clear: left;
+        }
+        header,
+        .summary,
+        .preamble,
+        .design-selection,
+        .design-archives,
+        .zen-resources,
+        .explanation,
+        .participation,
+        .benefits,
+        .requirements > *,
+        footer {
+            position: relative;
+            float: left;
+            margin: 45px 10px;
+            padding: 0 50px 15px 50px;
+            width: 260px;
+            background: url(http://www.csszengarden.com/219/layer-middle.svg) repeat-y center top;
+            -moz-background-size: 360px auto;
+            -o-background-size: 360px auto;
+            -webkit-background-size: 360px auto;
+            background-size: 360px auto;
+        }
+        
+        header,
+        .summary {
+            margin-top: 80px;
+        }
+        
+        .requirements > * {
+            padding: 15px 65px;
+            width: 230px;
+        }
+    
     
