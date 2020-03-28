@@ -171,6 +171,53 @@ h3 {
         display: block;
         padding: 10px 15px 0 15px;
     }
+    @media only screen and (min-width: 400px){
+    
+    
+    .page-wrapper {
+        position: relative;
+        margin: 120px auto 200px auto;
+        padding: 0 50px 20px 50px;
+        width: 260px;
+        background: url(http://www.csszengarden.com/219/layer-middle.svg) repeat-y center top;
+        -moz-background-size: 360px auto;
+        -o-background-size: 360px auto;
+        -webkit-background-size: 360px auto;
+        background-size: 360px auto;
+        -moz-transition: margin 1s ease-out;
+        -o-transition: margin 1s ease-out;
+        -webkit-transition: margin 1s ease-out;
+        transition: margin 1s ease-out;
+    }
+    
+        .page-wrapper::before,
+        .page-wrapper::after {
+            position: absolute;
+            left: 0;
+            width: 360px;
+            content: '';
+        }
+    
+        .page-wrapper::before {
+            top: -600px;
+            height: 600px;
+            background: url(http://www.csszengarden.com/219/hook3.svg) no-repeat center bottom, url(http://www.csszengarden.com/219/layer-frame.svg) no-repeat center 567px;
+            -moz-background-size: 300px auto, 360px auto;
+            -o-background-size: 300px auto, 360px auto;
+            -webkit-background-size: 300px auto, 360px auto;
+            background-size: 300px auto, 360px auto;
+        }
+    
+        .page-wrapper::after {
+            bottom: -33px;
+            height: 33px;
+            background: transparent url(http://www.csszengarden.com/219/layer-frame.svg) no-repeat center bottom;
+            -moz-background-size: 360px auto;
+            -o-background-size: 360px auto;
+            -webkit-background-size: 360px auto;
+            background-size: 360px auto;
+        }
+    }
     @media only screen and (min-width: 800px){
 
         body {
@@ -297,4 +344,4 @@ h3 {
             width: 230px;
         }
     
-    
+    }
