@@ -120,7 +120,29 @@ h3 {
             content: attr(title);
             line-height: 21px;
         }
-    
+
+        .design-selection li a.design-name,
+        .design-archives a,
+        .zen-resources a {
+            padding: 0;
+            border-radius: 0;
+            background-color: transparent;
+            color: #fff;
+        }
+        
+        .design-selection li a.designer-name {
+            display: block;
+            overflow: hidden;
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+        
+        .design-archives a,
+        .zen-resources a {
+            display: block;
+            text-align: center;
+        }
+        
     
     .wrapper li {
         display: block;
