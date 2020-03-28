@@ -21,8 +21,24 @@ ul, li {
     list-style: none;
 }
 
+html,
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 html {
-    background: #000;
+    overflow: hidden;
+    background: #333 url('./../images/backgroundImg.png') no-repeat right bottom;
+    background-attachment: fixed;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
 }
 
 body {
